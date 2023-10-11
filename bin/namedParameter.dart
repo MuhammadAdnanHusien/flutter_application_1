@@ -23,3 +23,15 @@ void sayHello({String? firstName, String lastName = 'Default'}) {
   sayHello(firstName: 'Muhammad');
   sayHello(lastName: 'Husien');
 }
+
+//required parameter
+void sayHello({required String firstName, String lastName = 'Default'}) {
+  print('Hello $firstName $lastName');
+}
+
+void main() {
+  sayHello(firstName: 'Muhammad', lastName: 'Husien');
+  sayHello(lastName: 'Husien', firstName: 'Muhammad');
+  sayHello(firstName: 'Muhammad');
+  sayHello(lastName: 'Husien');
+}
